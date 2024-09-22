@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to Vue.js",
+    "description": "Learn the basics of Vue.js, a progressive JavaScript framework.",
+    "image": "https://via.placeholder.com/200x100"
+  },
+  {
+    "id": 2,
+    "title": "Advanced Vue.js Techniques",
+    "description": "Deep dive into Vue.js features such as Vuex and Vue Router.",
+    "image": "https://via.placeholder.com/200x100"
+  },
+  {
+    "id": 3,
+    "title": "Vue.js with TypeScript",
+    "description": "Build Vue.js applications using TypeScript for enhanced maintainability.",
+    "image": "https://via.placeholder.com/200x100"
+  }
+]
