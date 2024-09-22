@@ -1,57 +1,35 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Course Catalog</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Courses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!--Primary AppNavbar Component -->
+    <AppNavbar />
+
+    <!--Primary AppNavbar Component -->
+    <SecondNavbar />
 
     <!-- Main content -->
     <Catalog />
 
-    <!-- Footer -->
-    <footer class="text-center py-3 mt-4">
-      <div class="container">
-        <p>© 2024 Course Catalog - All Rights Reserved.</p>
-      </div>
-    </footer>
+    <!-- AppFooter Component -->
+    <AppFooter />
   </div>
 </template>
 
 <script>
+import AppNavbar from "./components/Navbar/AppNavbar.vue";
+import AppFooter from "./components/Footer/AppFooter.vue";
 import Catalog from "./components/CourseCatalog.vue";
+import SecondNavbar from "./components/Navbar/SecondNavbar.vue";
 
 export default {
   components: {
+    AppNavbar,
+    AppFooter,
     Catalog,
+    SecondNavbar,
   },
 };
 </script>
 
 <style>
-/* Add any global styles if necessary */
+/* Global styles if necessary */
 </style>
