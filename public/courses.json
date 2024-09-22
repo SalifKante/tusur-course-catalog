@@ -16,5 +16,11 @@
     "title": "Vue.js with TypeScript",
     "description": "Build Vue.js applications using TypeScript for enhanced maintainability.",
     "image": "https://via.placeholder.com/200x100"
+  },
+  {
+    "id": 3,
+    "title": "Vue.js with TypeScript",
+    "description": "Build Vue.js applications using TypeScript for enhanced maintainability.",
+    "image": "https://via.placeholder.com/200x100"
   }
 ]

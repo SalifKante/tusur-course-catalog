@@ -1,13 +1,8 @@
 <template>
   <div class="container my-4">
     <div class="row">
-      <!-- Filters Section -->
-      <div class="col-md-3">
-        <CourseFilters @search="onSearch" @filter="onFilterChange" />
-      </div>
-
       <!-- Course Grid Section -->
-      <div class="col-md-9">
+      <div class="col-12">
         <div class="row">
           <!-- Render course cards using Bootstrap's grid system -->
           <div
@@ -28,42 +23,25 @@
 </template>
 
 <script>
-import CourseFilters from "./CourseFilters.vue";
 import CourseCard from "./CourseCard.vue";
 import axios from "axios";
 
 export default {
   name: "CourseCatalog",
   components: {
-    CourseFilters,
     CourseCard,
   },
   data() {
     return {
       courses: [],
-      searchQuery: "",
-      selectedCategory: "",
+      searchQuery: "", // If you want to keep search functionality
+      selectedCategory: "", // If you want to keep category filter
     };
   },
   computed: {
     filteredCourses() {
-      return this.courses.filter((course) => {
-        // Filter by search query and category
-        const matchesSearch = course.title
-          .toLowerCase()
-          .includes(this.searchQuery.toLowerCase());
-        const matchesCategory =
-          !this.selectedCategory || course.category === this.selectedCategory;
-        return matchesSearch && matchesCategory;
-      });
-    },
-  },
-  methods: {
-    onSearch(query) {
-      this.searchQuery = query;
-    },
-    onFilterChange(category) {
-      this.selectedCategory = category;
+      // This will return all courses since filters are not used right now
+      return this.courses;
     },
   },
   mounted() {
