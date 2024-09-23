@@ -1,6 +1,11 @@
 <template>
   <div class="container my-4">
     <div class="row">
+      <!-- New Courses Section -->
+      <div class="col-12 mb-4">
+        <NewCourses />
+      </div>
+
       <!-- Course Grid Section -->
       <div class="col-12">
         <div class="row">
@@ -24,12 +29,14 @@
 
 <script>
 import CourseCard from "./CourseCard.vue";
+import NewCourses from "./NewCourses.vue"; // Import the NewCourses component
 import axios from "axios";
 
 export default {
   name: "CourseCatalog",
   components: {
     CourseCard,
+    NewCourses, // Register the NewCourses component
   },
   data() {
     return {
