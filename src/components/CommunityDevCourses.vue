@@ -1,18 +1,29 @@
 <template>
-  <div class="popular-courses mt-popular my-4">
-    <h5 class="fw-bold mb-3"><i class="fas fa-bolt"></i> Популярные курсы</h5>
-    <div id="courseCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div
+    class="community-dev-courses my-4 p-4"
+    style="background-color: #f5f7eb; border-radius: 10px"
+  >
+    <h5 class="fw-bold mb-3">
+      <i class="fas fa-bolt"></i> Станьте частью сообщества разработчиков
+    </h5>
+    <p class="text-muted">
+      Проходите курсы по разработке совершенно бесплатно, лучших возьмем к себе
+      в команду
+    </p>
+
+    <div id="communityCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div
           v-for="(course, index) in courses"
-          :key="index"
+          :key="course.id"
           :class="['carousel-item', { active: index === 0 }]"
         >
-          <div class="course-card d-flex">
+          <div class="d-flex">
             <img
               :src="course.image"
               class="course-img me-3"
-              :alt="course.title"
+              alt="Course Image"
+              style="width: 150px; border-radius: 10px"
             />
             <div class="course-info">
               <span class="badge bg-primary mb-2">{{ course.category }}</span>
@@ -23,16 +34,16 @@
                   class="badge bg-secondary me-1"
                   v-for="tag in course.tags"
                   :key="tag"
-                  >{{ tag }}</span
                 >
+                  {{ tag }}
+                </span>
               </div>
-              <small
-                >{{ course.duration }} месяцев | старт
-                {{ course.startDate }}</small
-              >
+              <small>
+                {{ course.duration }} | старт {{ course.startDate }}
+              </small>
               <div class="d-flex justify-content-end mt-3">
                 <button class="btn btn-primary" style="border-radius: 20px">
-                  Записаться <i class="fas fa-arrow-right"></i>
+                  Записаться бесплатно <i class="fas fa-arrow-right"></i>
                 </button>
               </div>
             </div>
@@ -43,7 +54,7 @@
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#courseCarousel"
+        data-bs-target="#communityCarousel"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -52,7 +63,7 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#courseCarousel"
+        data-bs-target="#communityCarousel"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -66,50 +77,31 @@
 import axios from "axios";
 
 export default {
-  name: "PopularCourses",
+  name: "CommunityDevCourses",
   data() {
     return {
       courses: [],
     };
   },
   mounted() {
-    // Fetch the courses from popularcourses.json
+    // Fetch data from JSON
     axios
-      .get("/popularcourses.json")
+      .get("/communityDevCourses.json")
       .then((response) => {
         this.courses = response.data;
       })
       .catch((error) => {
-        console.error("Error fetching popular courses:", error);
+        console.error("Error fetching courses:", error);
       });
   },
 };
 </script>
 
 <style scoped>
-.popular-courses {
-  background-color: #f8f9fa;
+.community-dev-courses {
+  background-color: #f5f7eb;
   padding: 20px;
   border-radius: 10px;
-}
-
-/* Space between PopularCourses and navbar */
-.mt-popular {
-  margin-top: 30px; /* Adjust this value as needed */
-}
-
-.course-card {
-  display: flex;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.course-img {
-  width: 150px;
-  border-radius: 10px;
-  object-fit: cover;
 }
 
 .carousel-control-prev-icon,

@@ -6,61 +6,45 @@
         <NewCourses />
       </div>
 
-      <!-- Course Grid Section -->
+      <!-- Course Names Section -->
       <div class="col-12">
         <div class="row">
-          <!-- Render course cards using Bootstrap's grid system -->
-          <div
-            class="col-lg-4 col-md-6 mb-4"
-            v-for="course in filteredCourses"
-            :key="course.id"
-          >
-            <CourseCard
-              :title="course.title"
-              :description="course.description"
-              :image="course.image"
-            />
+          <!-- Render course names using Bootstrap's grid system -->
+          <div class="col-12 mb-4">
+            <CourseNames />
           </div>
         </div>
+      </div>
+
+      <!-- Recommended Courses Section -->
+      <div class="col-12 mb-4">
+        <RecommendedCourses />
+      </div>
+      <div class="col-12 mb-4">
+        <CommunityDevCourses />
+      </div>
+      <div class="col-12 mb-4">
+        <AlreadySeenCourses />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import CourseCard from "./CourseCard.vue";
-import NewCourses from "./NewCourses.vue"; // Import the NewCourses component
-import axios from "axios";
+import NewCourses from "./NewCourses.vue";
+import CourseNames from "./CourseNames.vue";
+import RecommendedCourses from "./RecommendedCourses.vue";
+import CommunityDevCourses from "./CommunityDevCourses.vue";
+import AlreadySeenCourses from "./AlreadySeenCourses.vue";
 
 export default {
   name: "CourseCatalog",
   components: {
-    CourseCard,
-    NewCourses, // Register the NewCourses component
-  },
-  data() {
-    return {
-      courses: [],
-      searchQuery: "", // If you want to keep search functionality
-      selectedCategory: "", // If you want to keep category filter
-    };
-  },
-  computed: {
-    filteredCourses() {
-      // This will return all courses since filters are not used right now
-      return this.courses;
-    },
-  },
-  mounted() {
-    // Fetch course data from the JSON file
-    axios
-      .get("/courses.json")
-      .then((response) => {
-        this.courses = response.data;
-      })
-      .catch((error) => {
-        console.error("Error fetching courses:", error);
-      });
+    NewCourses,
+    CourseNames,
+    RecommendedCourses,
+    CommunityDevCourses,
+    AlreadySeenCourses,
   },
 };
 </script>

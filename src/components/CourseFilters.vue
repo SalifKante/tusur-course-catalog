@@ -203,10 +203,37 @@ export default {
 .sidebar {
   background-color: #f8f9fa;
   border-right: 1px solid #dee2e6;
+  position: sticky;
+  top: 160px; /* Increased space below the navbar */
+  width: 100%;
+  max-width: 280px;
+  overflow-y: auto;
+  padding-bottom: 1rem;
 }
+
+@media (max-width: 1300px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    margin-top: 1rem;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    position: static; /* On smaller screens, make the sidebar static */
+    max-width: 100%; /* Full width on smaller screens */
+    height: auto; /* Allow auto height for responsiveness */
+    overflow-y: visible; /* Avoid scrolling on small screens */
+    margin-top: 1rem; /* Add space on top */
+  }
+}
+
 button.btn-link {
   color: #3c388d;
 }
+
 button.btn-link:hover {
   text-decoration: underline;
 }

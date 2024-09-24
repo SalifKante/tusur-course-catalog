@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Python-разработчик с нуля до Middle",
+    "description": "Основной язык в data-science и один из трёх главных языков в web-разработке.",
+    "category": "Программирование",
+    "duration": "5 месяцев",
+    "startDate": "12 июля",
+    "tags": ["ООП", "Python", "Алгоритмы"],
+    "image": "/images/courses/popular/python-middle.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Data Scientist",
+    "description": "Основной язык в data-science и один из трёх главных языков в web-разработке.",
+    "category": "Программирование",
+    "duration": "6 месяцев",
+    "startDate": "1 августа",
+    "tags": ["ООП", "Python", "Алгоритмы"],
+    "image": "/images/courses/popular/data-scientist.jpg"
+  }
+]
