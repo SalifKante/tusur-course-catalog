@@ -1,0 +1,32 @@
+[
+  {
+    "image": "/images/courses/new/ux-ui.jpg",
+    "category": "Программирование",
+    "title": "UX/UI дизайнер",
+    "description": "Основной язык в data-science и один из трёх главных языков в web-разработке.",
+    "tags": ["Основы ООП", "Python", "Сбор данных ООП", "DOM"],
+    "duration": "5",
+    "priceText": "2 990 ₽",
+    "buttonText": "Записаться"
+  },
+  {
+    "image": "/images/courses/new/smm.png",
+    "category": "Программирование",
+    "title": "SMM-специалист",
+    "description": "Основной язык в data-science и один из трёх главных языков в web-разработке.",
+    "tags": ["Основы ООП", "Python", "Сбор данных ООП", "DOM"],
+    "duration": "4",
+    "priceText": "Бесплатно",
+    "buttonText": "Записаться бесплатно"
+  },
+  {
+    "image": "/images/courses/new/cpp.jpg",
+    "category": "Программирование",
+    "title": "Программирование на C++",
+    "description": "Основной язык в data-science и один из трёх главных языков в web-разработке.",
+    "tags": ["Основы ООП", "Python", "Сбор данных ООП", "DOM"],
+    "duration": "6",
+    "priceText": "2 990 ₽",
+    "buttonText": "Записаться"
+  }
+]
