@@ -6,24 +6,24 @@
   >
     <div class="container d-flex justify-content-between align-items-center">
       <!-- Left side: Logo and System Name -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <router-link class="navbar-brand d-flex align-items-center" to="/">
         <div class="d-flex flex-column align-items-center">
           <img
             :src="require('@/assets/tusur.svg')"
             alt="TUSUR Logo"
             class="logo-img"
           />
-          <span class="fw-bold system-name" style="color: #3c388d">
-            TUSUR UNIVERSITY
-          </span>
+          <span class="fw-bold system-name" style="color: #3c388d"
+            >TUSUR UNIVERSITY</span
+          >
         </div>
         <div class="long-bar mx-3"></div>
         <div class="d-flex flex-column">
-          <small class="fw-normal system-desc" style="color: #3c388d">
-            СИСТЕМА УПРАВЛЕНИЯ ОБУЧЕНИЕМ
-          </small>
+          <small class="fw-normal system-desc" style="color: #3c388d"
+            >СИСТЕМА УПРАВЛЕНИЯ ОБУЧЕНИЕМ</small
+          >
         </div>
-      </a>
+      </router-link>
 
       <!-- Hamburger Toggle Button for smaller screens -->
       <button
@@ -42,16 +42,20 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto d-flex flex-lg-row align-items-center">
           <li class="nav-item me-lg-3">
-            <a class="nav-link active fw-bold" href="#">
+            <!-- Update to router-link for Главная -->
+            <router-link class="nav-link active fw-bold" to="/">
               <i
                 class="fas fa-graduation-cap me-2"
                 style="color: #3c388d; font-size: 24px"
               ></i>
-              Мои курсы
-            </a>
+              Главная
+            </router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#">Каталог курсов</a>
+            <!-- Update to router-link for Каталог курсов -->
+            <router-link class="nav-link fw-bold" to="/catalog"
+              >Каталог курсов</router-link
+            >
           </li>
         </ul>
 
@@ -132,8 +136,8 @@
               class="dropdown-menu dropdown-menu-end"
               aria-labelledby="profileDropdown"
             >
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Logout</a></li>
+              <li><a class="dropdown-item" href="#">Профиль</a></li>
+              <li><a class="dropdown-item" href="#">Выход из системы</a></li>
             </ul>
           </div>
         </div>
@@ -150,9 +154,18 @@
       class="breadcrumb-container container d-flex justify-content-between align-items-center"
     >
       <div class="d-flex">
-        <a class="nav-link" href="#" style="color: #3c388d">Главная</a>
+        <!-- Breadcrumb links updated to router-links -->
+        <router-link class="nav-link" to="/" style="color: #3c388d"
+          >Главная</router-link
+        >
         <span class="mx-2" style="color: #3c388d">/</span>
-        <a class="nav-link" href="#" style="color: #3c388d">Каталог курсов</a>
+        <router-link class="nav-link" to="/catalog" style="color: #3c388d"
+          >Каталог курсов</router-link
+        >
+        <span class="mx-2" style="color: #3c388d">/</span>
+        <router-link class="nav-link" to="/new-courses" style="color: #3c388d"
+          >Новые курсы</router-link
+        >
       </div>
       <button
         class="btn btn-outline-primary custom-btn ms-auto"

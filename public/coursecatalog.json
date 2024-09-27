@@ -1,0 +1,311 @@
+[
+  {
+    "title": "Программирование на Python",
+    "description": "Основной язык в data-science и один из трёх главных языков в web-разработке.",
+    "tags": ["Python", "Data Science", "Программирование"],
+    "price": "2 990 ₽",
+    "image": "/images/courses/popular/cpp.jpg"
+  },
+  {
+    "title": "Аналитика больших данных",
+    "description": "Основной курс по обработке и анализу данных.",
+    "tags": ["Big Data", "SQL"],
+    "price": "Записаться бесплатно",
+    "image": "/images/courses/popular/analytic.png"
+  },
+  {
+    "title": "Машинное обучение",
+    "description": "Курс по машинному обучению для начинающих.",
+    "tags": ["Machine Learning", "AI"],
+    "price": "3 500 ₽",
+    "image": "/images/courses/popular/ml.jpg"
+  },
+  {
+    "title": "Основы веб-разработки",
+    "description": "Курс по основам HTML, CSS и JavaScript.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "price": "1 990 ₽",
+    "image": "/images/courses/popular/web.jpg"
+  },
+  {
+    "title": "Инженерия данных",
+    "description": "Овладейте ключевыми навыками веб-разработки, включая HTML, CSS, JavaScript и современные фреймворки. ",
+    "tags": ["Data Engineering", "SQL"],
+    "price": "4 000 ₽",
+    "image": "/images/courses/popular/data-engineer.jpg"
+  },
+  {
+    "title": "Мобильный iOS-разработчик",
+    "description": "Освойте разработку мобильных приложений для iOS с нуля до публикации в App Store.",
+    "tags": [
+      "Основы ООП",
+      "Python",
+      "Сбор данных ООП",
+      "DOM",
+      "Форматирование данных",
+      "+9"
+    ],
+    "duration": "5 месяцев",
+    "startDate": "старт 12 июля",
+    "price": "2 990 ₽",
+    "category": "Программирование",
+    "image": "/images/courses/popular/ios-developer-image.jpg"
+  },
+  {
+    "title": "Инженер по тестированию",
+    "description": "Изучите основы тестирования программного обеспечения, автоматизацию тестирования и методы работы с тестовыми фреймворками для повышения качества продуктов.",
+    "tags": [
+      "Основы ООП",
+      "Python",
+      "Сбор данных ООП",
+      "DOM",
+      "Форматирование данных",
+      "+9"
+    ],
+    "duration": "5 месяцев",
+    "startDate": "старт 12 июля",
+    "price": "Записаться бесплатно",
+    "category": "Программирование",
+    "image": "/images/courses/popular/testing-engineer-image.jpg"
+  },
+  {
+    "title": "Программирование на Python",
+    "description": "Изучите Python — один из самых популярных языков программирования, используемый в data science, веб-разработке и автоматизации. ",
+    "tags": [
+      "Основы ООП",
+      "Python",
+      "Сбор данных ООП",
+      "DOM",
+      "Форматирование данных",
+      "+9"
+    ],
+    "duration": "4 месяца",
+    "startDate": "старт 20 ноября",
+    "price": "2 990 Р",
+    "category": "Программирование",
+    "image": "/images/courses/popular/python-course-image.jpg"
+  },
+  {
+    "title": "Дизайн презентаций",
+    "description": "Освойте искусство создания эффективных и привлекательных презентаций, которые привлекут внимание аудитории.",
+    "tags": [
+      "Основы ООП",
+      "Python",
+      "Сбор данных ООП",
+      "DOM",
+      "Форматирование данных",
+      "+9"
+    ],
+    "duration": "3 месяца",
+    "startDate": "старт 15 декабря",
+    "price": "2 990 Р",
+    "category": "Программирование",
+    "image": "/images/courses/popular/design-course-image.png"
+  },
+  {
+    "title": "Программирование на Python",
+    "description": "Основной язык в data-science и один из трёх главных языков в web-разработке.",
+    "tags": ["Python", "Data Science", "Программирование"],
+    "price": "2 990 ₽",
+    "image": "/images/courses/popular/cpp.jpg"
+  },
+  {
+    "title": "Аналитика больших данных",
+    "description": "Основной курс по обработке и анализу данных.",
+    "tags": ["Big Data", "SQL"],
+    "price": "Записаться бесплатно",
+    "image": "/images/courses/popular/analytic.png"
+  },
+  {
+    "title": "Машинное обучение",
+    "description": "Курс по машинному обучению для начинающих.",
+    "tags": ["Machine Learning", "AI"],
+    "price": "3 500 ₽",
+    "image": "/images/courses/popular/ml.jpg"
+  },
+  {
+    "title": "Основы веб-разработки",
+    "description": "Курс по основам HTML, CSS и JavaScript.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "price": "1 990 ₽",
+    "image": "/images/courses/popular/web.jpg"
+  },
+  {
+    "title": "Инженерия данных",
+    "description": "Овладейте ключевыми навыками веб-разработки, включая HTML, CSS, JavaScript и современные фреймворки. ",
+    "tags": ["Data Engineering", "SQL"],
+    "price": "4 000 ₽",
+    "image": "/images/courses/popular/data-engineer.jpg"
+  },
+  {
+    "title": "Мобильный iOS-разработчик",
+    "description": "Освойте разработку мобильных приложений для iOS с нуля до публикации в App Store.",
+    "tags": [
+      "Основы ООП",
+      "Python",
+      "Сбор данных ООП",
+      "DOM",
+      "Форматирование данных",
+      "+9"
+    ],
+    "duration": "5 месяцев",
+    "startDate": "старт 12 июля",
+    "price": "2 990 ₽",
+    "category": "Программирование",
+    "image": "/images/courses/popular/ios-developer-image.jpg"
+  },
+  {
+    "title": "Инженер по тестированию",
+    "description": "Изучите основы тестирования программного обеспечения, автоматизацию тестирования и методы работы с тестовыми фреймворками для повышения качества продуктов.",
+    "tags": [
+      "Основы ООП",
+      "Python",
+      "Сбор данных ООП",
+      "DOM",
+      "Форматирование данных",
+      "+9"
+    ],
+    "duration": "5 месяцев",
+    "startDate": "старт 12 июля",
+    "price": "Записаться бесплатно",
+    "category": "Программирование",
+    "image": "/images/courses/popular/testing-engineer-image.jpg"
+  },
+  {
+    "title": "Программирование на Python",
+    "description": "Изучите Python — один из самых популярных языков программирования, используемый в data science, веб-разработке и автоматизации. ",
+    "tags": [
+      "Основы ООП",
+      "Python",
+      "Сбор данных ООП",
+      "DOM",
+      "Форматирование данных",
+      "+9"
+    ],
+    "duration": "4 месяца",
+    "startDate": "старт 20 ноября",
+    "price": "2 990 Р",
+    "category": "Программирование",
+    "image": "/images/courses/popular/python-course-image.jpg"
+  },
+  {
+    "title": "Дизайн презентаций",
+    "description": "Освойте искусство создания эффективных и привлекательных презентаций, которые привлекут внимание аудитории.",
+    "tags": [
+      "Основы ООП",
+      "Python",
+      "Сбор данных ООП",
+      "DOM",
+      "Форматирование данных",
+      "+9"
+    ],
+    "duration": "3 месяца",
+    "startDate": "старт 15 декабря",
+    "price": "2 990 Р",
+    "category": "Программирование",
+    "image": "/images/courses/popular/design-course-image.png"
+  },
+  {
+    "title": "Программирование на Python",
+    "description": "Основной язык в data-science и один из трёх главных языков в web-разработке.",
+    "tags": ["Python", "Data Science", "Программирование"],
+    "price": "2 990 ₽",
+    "image": "/images/courses/popular/cpp.jpg"
+  },
+  {
+    "title": "Аналитика больших данных",
+    "description": "Основной курс по обработке и анализу данных.",
+    "tags": ["Big Data", "SQL"],
+    "price": "Записаться бесплатно",
+    "image": "/images/courses/popular/analytic.png"
+  },
+  {
+    "title": "Машинное обучение",
+    "description": "Курс по машинному обучению для начинающих.",
+    "tags": ["Machine Learning", "AI"],
+    "price": "3 500 ₽",
+    "image": "/images/courses/popular/ml.jpg"
+  },
+  {
+    "title": "Основы веб-разработки",
+    "description": "Курс по основам HTML, CSS и JavaScript.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "price": "1 990 ₽",
+    "image": "/images/courses/popular/web.jpg"
+  },
+  {
+    "title": "Инженерия данных",
+    "description": "Овладейте ключевыми навыками веб-разработки, включая HTML, CSS, JavaScript и современные фреймворки. ",
+    "tags": ["Data Engineering", "SQL"],
+    "price": "4 000 ₽",
+    "image": "/images/courses/popular/data-engineer.jpg"
+  },
+  {
+    "title": "Мобильный iOS-разработчик",
+    "description": "Освойте разработку мобильных приложений для iOS с нуля до публикации в App Store.",
+    "tags": [
+      "Основы ООП",
+      "Python",
+      "Сбор данных ООП",
+      "DOM",
+      "Форматирование данных",
+      "+9"
+    ],
+    "duration": "5 месяцев",
+    "startDate": "старт 12 июля",
+    "price": "2 990 ₽",
+    "category": "Программирование",
+    "image": "/images/courses/popular/ios-developer-image.jpg"
+  },
+  {
+    "title": "Инженер по тестированию",
+    "description": "Изучите основы тестирования программного обеспечения, автоматизацию тестирования и методы работы с тестовыми фреймворками для повышения качества продуктов.",
+    "tags": [
+      "Основы ООП",
+      "Python",
+      "Сбор данных ООП",
+      "DOM",
+      "Форматирование данных",
+      "+9"
+    ],
+    "duration": "5 месяцев",
+    "startDate": "старт 12 июля",
+    "price": "Записаться бесплатно",
+    "category": "Программирование",
+    "image": "/images/courses/popular/testing-engineer-image.jpg"
+  },
+  {
+    "title": "Программирование на Python",
+    "description": "Изучите Python — один из самых популярных языков программирования, используемый в data science, веб-разработке и автоматизации. ",
+    "tags": [
+      "Основы ООП",
+      "Python",
+      "Сбор данных ООП",
+      "DOM",
+      "Форматирование данных",
+      "+9"
+    ],
+    "duration": "4 месяца",
+    "startDate": "старт 20 ноября",
+    "price": "2 990 Р",
+    "category": "Программирование",
+    "image": "/images/courses/popular/python-course-image.jpg"
+  },
+  {
+    "title": "Дизайн презентаций",
+    "description": "Освойте искусство создания эффективных и привлекательных презентаций, которые привлекут внимание аудитории.",
+    "tags": [
+      "Основы ООП",
+      "Python",
+      "Сбор данных ООП",
+      "DOM",
+      "Форматирование данных",
+      "+9"
+    ],
+    "duration": "3 месяца",
+    "startDate": "старт 15 декабря",
+    "price": "2 990 Р",
+    "category": "Программирование",
+    "image": "/images/courses/popular/design-course-image.png"
+  }
+]

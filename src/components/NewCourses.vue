@@ -18,33 +18,44 @@
       <div
         v-for="(course, index) in courses"
         :key="index"
-        class="col-lg-4 col-md-6 mb-4"
+        class="col-lg-4 col-md-6 col-sm-12 mb-4"
       >
         <div class="card h-100">
+          <!-- Программирование Badge at the top-left of each card -->
+          <span class="programming-badge">Программирование</span>
+
+          <!-- Star icon at the top-right of each card -->
+          <span class="star-icon">
+            <i class="far fa-star"></i>
+          </span>
+
           <img :src="course.image" class="card-img-top" :alt="course.title" />
           <div class="card-body">
-            <span class="badge bg-primary mb-2">{{ course.category }}</span>
-            <h6 class="fw-bold">{{ course.title }}</h6>
-            <p class="text-muted">{{ course.description }}</p>
+            <h5 class="card-title fw-bold">{{ course.title }}</h5>
+            <p class="card-text">{{ course.description }}</p>
+
+            <!-- Tags Section -->
             <div class="tags mb-2">
               <span
-                class="badge bg-secondary me-1"
-                v-for="tag in course.tags"
-                :key="tag"
-                >{{ tag }}</span
+                v-for="(tag, tagIndex) in course.tags"
+                :key="tagIndex"
+                class="badge bg-light text-dark me-1"
               >
+                {{ tag }}
+              </span>
             </div>
-            <small
-              >{{ course.duration }} месяцев | {{ course.priceText }}</small
-            >
-          </div>
-          <div class="card-footer text-end">
-            <button
-              class="btn btn-outline-primary"
-              :style="{ borderRadius: '20px' }"
-            >
-              {{ course.buttonText }} <i class="fas fa-arrow-right"></i>
-            </button>
+            <!-- Price/Enroll Button -->
+            <div class="price-section">
+              <button
+                v-if="course.priceText !== 'Записаться бесплатно'"
+                class="btn btn-primary w-100"
+              >
+                {{ course.priceText }} →
+              </button>
+              <button v-else class="btn btn-outline-primary w-100">
+                {{ course.priceText }} →
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -59,7 +70,7 @@ export default {
   name: "NewCourses",
   data() {
     return {
-      courses: [],
+      courses: [], // Placeholder for the course data
     };
   },
   mounted() {
@@ -83,22 +94,75 @@ export default {
 }
 
 .card {
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+  position: relative;
 }
 
-.card-img-top {
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.card-footer {
-  background-color: transparent;
+/* Programming badge at the top-left */
+.programming-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  color: rgb(75, 72, 72);
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
-.tags .badge {
-  background-color: #dee2e6;
+/* Star icon at the top-right */
+.star-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 8px;
+  color: rgb(75, 72, 72);
+  border: 1px solid gray;
+}
+
+.star-icon i {
+  font-size: 1.2rem;
+}
+
+img.card-img-top {
+  border-radius: 15px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price-section {
+  margin-top: 15px;
+}
+
+.selected {
+  border: 2px solid #3c388d;
+  background-color: rgba(60, 56, 141, 0.1);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #3c388d;
+  border-color: #3c388d;
+}
+
+.btn-outline-primary {
   color: #3c388d;
+  border-color: #3c388d;
 }
 </style>

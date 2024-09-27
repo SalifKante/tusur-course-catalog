@@ -7,6 +7,7 @@
         :key="index"
         class="badge rounded-pill border border-primary text-primary px-3 py-2"
         style="cursor: pointer"
+        @click="selectCourse(course)"
       >
         {{ course }}
       </span>
@@ -34,6 +35,15 @@ export default {
         "Аналитика",
       ],
     };
+  },
+  methods: {
+    selectCourse(course) {
+      // Emit the selected course to the parent component for global handling
+      this.$emit("update-selected-courses", {
+        courses: [course], // Pass the selected course name
+        sectionTitle: "Эти курсы ищут чаще всего", // Set the section title
+      });
+    },
   },
 };
 </script>
